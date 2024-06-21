@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "RootFolder/NextjsExampleProject/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "RootFolder/NextjsExampleProject/$1"
+    }
+  ]
+}
